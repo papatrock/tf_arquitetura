@@ -56,6 +56,50 @@
     <a name="circuit" val="CPU"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(150,410)" name="Clock"/>
+    <comp lib="0" loc="(160,370)" name="Constant"/>
+    <comp lib="0" loc="(210,440)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="reset"/>
+    </comp>
+    <comp lib="0" loc="(240,290)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(600,400)" name="Splitter">
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="3" loc="(310,300)" name="Adder"/>
+    <comp lib="4" loc="(180,320)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="label" val="PC"/>
+    </comp>
+    <comp lib="4" loc="(320,340)" name="ROM">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(940,400)" name="bancoRegistrador"/>
+    <wire from="(150,410)" to="(160,410)"/>
+    <wire from="(160,260)" to="(160,350)"/>
+    <wire from="(160,260)" to="(320,260)"/>
+    <wire from="(160,350)" to="(180,350)"/>
+    <wire from="(160,370)" to="(180,370)"/>
+    <wire from="(160,390)" to="(160,410)"/>
+    <wire from="(160,390)" to="(180,390)"/>
+    <wire from="(210,410)" to="(210,440)"/>
+    <wire from="(240,290)" to="(270,290)"/>
+    <wire from="(240,350)" to="(250,350)"/>
+    <wire from="(250,310)" to="(250,350)"/>
+    <wire from="(250,310)" to="(270,310)"/>
+    <wire from="(250,350)" to="(320,350)"/>
+    <wire from="(310,300)" to="(320,300)"/>
+    <wire from="(320,260)" to="(320,300)"/>
+    <wire from="(560,400)" to="(600,400)"/>
   </circuit>
   <circuit name="bancoRegistrador">
     <a name="appearance" val="custom"/>
