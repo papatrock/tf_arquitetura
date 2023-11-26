@@ -2314,13 +2314,14 @@ ff ff e0 ff 14 ff ff ff
 e0 ff 14 ff ff ff e0 ff
 14 ff ff ff e0 ff 14 ff
 ff ff e0 ff 14 ff ff ff
-e0 ff 14 ff ff ff e0 ff
+d0 ff 14 ff ff ff e0 ff
 14 ff ff ff e0 ff 14 ff
 ff ff e0 ff 14 ff ff ff
 e0 ff 14 ff ff ff e0 ff
 14 ff ff ff e0 ff 14 ff
 ff ff e0 ff 14 ff ff ff
-e0 ff 14 ff ff ff e0 ff
+e0 ff 14 ff ff ff e0 5*ff
+d0 7*ff
 </a>
       <a name="labelvisible" val="true"/>
     </comp>
@@ -2520,6 +2521,7 @@ e0 ff 14 ff ff ff e0 ff
     <wire from="(2980,890)" to="(2980,900)"/>
     <wire from="(3000,890)" to="(3000,900)"/>
     <wire from="(3000,900)" to="(3010,900)"/>
+    <wire from="(3020,780)" to="(3040,780)"/>
     <wire from="(3020,800)" to="(3160,800)"/>
     <wire from="(3160,800)" to="(3160,1640)"/>
     <wire from="(3160,800)" to="(3260,800)"/>
@@ -3095,7 +3097,6 @@ e0 ff 14 ff ff ff e0 ff
       <visible-register height="10" path="/Register(460,840)" stroke-width="0" width="13" x="122" y="175"/>
       <visible-register height="10" path="/Register(470,690)" stroke-width="0" width="13" x="102" y="173"/>
       <circ-anchor facing="east" x="150" y="150"/>
-      <circ-port dir="in" pin="1060,240" x="150" y="150"/>
       <circ-port dir="in" pin="110,470" x="110" y="200"/>
       <circ-port dir="in" pin="130,180" x="80" y="150"/>
       <circ-port dir="in" pin="180,380" x="130" y="200"/>
@@ -3103,7 +3104,8 @@ e0 ff 14 ff ff ff e0 ff
       <circ-port dir="in" pin="250,580" x="80" y="170"/>
       <circ-port dir="in" pin="550,1030" x="140" y="200"/>
       <circ-port dir="in" pin="880,170" x="110" y="140"/>
-      <circ-port dir="in" pin="940,540" x="150" y="170"/>
+      <circ-port dir="out" pin="1060,240" x="150" y="150"/>
+      <circ-port dir="out" pin="940,540" x="150" y="170"/>
     </appear>
     <comp lib="0" loc="(100,510)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -3113,6 +3115,7 @@ e0 ff 14 ff ff ff e0 ff
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="miss"/>
+      <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(1060,270)" name="Tunnel">
       <a name="label" val="miss"/>
@@ -3154,6 +3157,7 @@ e0 ff 14 ff ff ff e0 ff
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="data_out"/>
+      <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
     <comp lib="1" loc="(1010,240)" name="AND Gate"/>
