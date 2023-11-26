@@ -2240,7 +2240,7 @@
       <a name="facing" val="north"/>
       <a name="label" val="reset"/>
     </comp>
-    <comp lib="0" loc="(2870,810)" name="Tunnel">
+    <comp lib="0" loc="(3000,810)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="clk"/>
       <a name="labelfont" val="SansSerif bold 10"/>
@@ -2296,7 +2296,7 @@
       <a name="width" val="8"/>
     </comp>
     <comp lib="3" loc="(620,630)" name="Adder"/>
-    <comp lib="4" loc="(2890,740)" name="RAM">
+    <comp lib="4" loc="(3020,740)" name="RAM">
       <a name="appearance" val="logisim_evolution"/>
       <a name="trigger" val="falling"/>
     </comp>
@@ -2321,6 +2321,9 @@
     <comp lib="8" loc="(3000,740)" name="Text">
       <a name="text" val="MEMORIA TEMPORARIA"/>
     </comp>
+    <comp lib="8" loc="(3672,865)" name="Text">
+      <a name="text" val="lindo"/>
+    </comp>
     <comp loc="(1340,990)" name="controle">
       <a name="labelloc" val="east"/>
     </comp>
@@ -2331,6 +2334,7 @@
     <comp loc="(2420,860)" name="branchModule"/>
     <comp loc="(2570,610)" name="EXMEM"/>
     <comp loc="(3390,600)" name="MEMWB"/>
+    <comp loc="(3690,890)" name="cache"/>
     <comp loc="(960,710)" name="IFID"/>
     <wire from="(1010,630)" to="(1600,630)"/>
     <wire from="(1010,730)" to="(1030,730)"/>
@@ -2501,17 +2505,18 @@
     <wire from="(2740,680)" to="(2740,880)"/>
     <wire from="(2740,680)" to="(3320,680)"/>
     <wire from="(2750,750)" to="(2750,910)"/>
-    <wire from="(2750,750)" to="(2890,750)"/>
+    <wire from="(2750,750)" to="(3020,750)"/>
     <wire from="(2770,730)" to="(2770,830)"/>
-    <wire from="(2770,830)" to="(2890,830)"/>
+    <wire from="(2770,830)" to="(3020,830)"/>
     <wire from="(2790,790)" to="(2790,1110)"/>
-    <wire from="(2790,790)" to="(2890,790)"/>
+    <wire from="(2790,790)" to="(3020,790)"/>
     <wire from="(2820,800)" to="(2820,1090)"/>
-    <wire from="(2820,800)" to="(2890,800)"/>
-    <wire from="(2870,810)" to="(2890,810)"/>
-    <wire from="(3130,830)" to="(3160,830)"/>
-    <wire from="(3160,830)" to="(3160,1640)"/>
-    <wire from="(3160,830)" to="(3320,830)"/>
+    <wire from="(2820,800)" to="(3020,800)"/>
+    <wire from="(3000,810)" to="(3020,810)"/>
+    <wire from="(3160,1640)" to="(3280,1640)"/>
+    <wire from="(3260,830)" to="(3280,830)"/>
+    <wire from="(3280,830)" to="(3280,1640)"/>
+    <wire from="(3280,830)" to="(3320,830)"/>
     <wire from="(3340,1340)" to="(3340,1370)"/>
     <wire from="(3390,1340)" to="(3390,1360)"/>
     <wire from="(3410,1000)" to="(3510,1000)"/>
@@ -2794,10 +2799,55 @@
     <wire from="(950,640)" to="(1690,640)"/>
   </circuit>
   <circuit name="cache">
-    <a name="appearance" val="logisim_evolution"/>
+    <a name="appearance" val="custom"/>
     <a name="circuit" val="cache"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="#8f8f8f" height="110" stroke="#000000" stroke-width="2" width="161" x="50" y="43"/>
+      <visible-register height="10" path="/cacheEntry(550,350)/Register(460,420)" stroke-width="0" width="13" x="149" y="69"/>
+      <visible-register height="10" path="/cacheEntry(550,350)/Register(460,560)" stroke-width="0" width="13" x="132" y="69"/>
+      <visible-register height="10" path="/cacheEntry(550,350)/Register(460,840)" stroke-width="0" width="13" x="116" y="69"/>
+      <visible-register height="10" path="/cacheEntry(550,350)/Register(470,690)" stroke-width="0" width="13" x="99" y="69"/>
+      <visible-register height="10" path="/cacheEntry(700,350)/Register(460,420)" stroke-width="0" width="13" x="149" y="87"/>
+      <visible-register height="10" path="/cacheEntry(700,350)/Register(460,560)" stroke-width="0" width="13" x="132" y="87"/>
+      <visible-register height="10" path="/cacheEntry(700,350)/Register(460,840)" stroke-width="0" width="13" x="99" y="87"/>
+      <visible-register height="10" path="/cacheEntry(700,350)/Register(470,690)" stroke-width="0" width="13" x="116" y="87"/>
+      <visible-register height="10" path="/cacheEntry(830,350)/Register(460,420)" stroke-width="0" width="13" x="149" y="105"/>
+      <visible-register height="10" path="/cacheEntry(830,350)/Register(460,560)" stroke-width="0" width="13" x="132" y="105"/>
+      <visible-register height="10" path="/cacheEntry(830,350)/Register(460,840)" stroke-width="0" width="13" x="99" y="105"/>
+      <visible-register height="10" path="/cacheEntry(830,350)/Register(470,690)" stroke-width="0" width="13" x="116" y="105"/>
+      <visible-register height="10" path="/cacheEntry(960,350)/Register(460,420)" stroke-width="0" width="13" x="149" y="123"/>
+      <visible-register height="10" path="/cacheEntry(960,350)/Register(460,560)" stroke-width="0" width="13" x="132" y="123"/>
+      <visible-register height="10" path="/cacheEntry(960,350)/Register(460,840)" stroke-width="0" width="13" x="98" y="123"/>
+      <visible-register height="10" path="/cacheEntry(960,350)/Register(470,690)" stroke-width="0" width="13" x="116" y="123"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="125" y="49">L1</text>
+      <polyline fill="none" points="41,50 48,50" stroke="#000000" stroke-width="3"/>
+      <polyline fill="none" points="42,70 49,70" stroke="#000000" stroke-width="3"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="9" text-anchor="middle" x="68" y="49">address</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="9" text-anchor="middle" x="66" y="68">data_in</text>
+      <polyline fill="none" points="213,70 220,70" stroke="#000000" stroke-width="3"/>
+      <polyline fill="none" points="212,50 219,50" stroke="#000000" stroke-width="3"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="9" text-anchor="middle" x="191" y="49">miss</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="9" text-anchor="middle" x="190" y="69">data_out</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="9" text-anchor="middle" x="199" y="146">r</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="9" text-anchor="middle" x="180" y="147">clk</text>
+      <polyline fill="none" points="180,160 180,152" stroke="#000000"/>
+      <polyline fill="none" points="200,160 200,153" stroke="#000000"/>
+      <polyline fill="none" points="70,160 70,151" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="9" text-anchor="middle" x="66" y="142">mRead</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="9" text-anchor="middle" x="102" y="142">mWrite</text>
+      <polyline fill="none" points="100,159 100,152" stroke="#000000" stroke-width="2"/>
+      <circ-anchor facing="east" x="140" y="50"/>
+      <circ-port dir="in" pin="230,230" x="70" y="160"/>
+      <circ-port dir="in" pin="240,340" x="40" y="50"/>
+      <circ-port dir="in" pin="250,470" x="40" y="70"/>
+      <circ-port dir="in" pin="250,570" x="100" y="160"/>
+      <circ-port dir="in" pin="630,670" x="180" y="160"/>
+      <circ-port dir="in" pin="680,670" x="200" y="160"/>
+      <circ-port dir="out" pin="1150,390" x="220" y="70"/>
+      <circ-port dir="out" pin="350,150" x="220" y="50"/>
+    </appear>
     <comp lib="0" loc="(1100,440)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="index"/>
