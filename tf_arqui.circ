@@ -3103,10 +3103,10 @@ ff 14 ff ff ff e0 5*ff d0
       <text dominant-baseline="central" font-family="SansSerif" font-size="9" text-anchor="middle" x="66" y="142">mRead</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="9" text-anchor="middle" x="102" y="142">mWrite</text>
       <polyline fill="none" points="100,159 100,152" stroke="#000000" stroke-width="2"/>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="11" font-weight="bold" text-anchor="middle" x="98" y="73">0-</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" font-weight="bold" text-anchor="middle" x="99" y="92">4-</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" font-weight="bold" text-anchor="middle" x="99" y="110">8-</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="10" font-weight="bold" text-anchor="middle" x="99" y="128">c-</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="11" font-weight="bold" text-anchor="middle" x="99" y="74">00</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" font-weight="bold" text-anchor="middle" x="99" y="92">01</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" font-weight="bold" text-anchor="middle" x="99" y="110">10</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="10" font-weight="bold" text-anchor="middle" x="99" y="128">11</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="190" y="92">tagR</text>
       <polyline fill="none" points="218,80 207,80" stroke="#000000" stroke-width="2"/>
       <polyline fill="none" points="207,80 207,110" stroke="#000000" stroke-width="2"/>
@@ -3646,15 +3646,12 @@ ff 14 ff ff ff e0 5*ff d0
     <a name="clabelfont" val="SansSerif bold 10"/>
     <a name="simulationFrequency" val="8.0"/>
     <appear>
-      <polyline fill="#ffffff" points="90,170 370,170" stroke="#000000" stroke-width="2"/>
-      <polyline fill="none" points="90,170 119,110" stroke="#000000" stroke-width="2"/>
-      <polyline fill="none" points="119,110 343,111" stroke="#000000" stroke-width="2"/>
-      <polyline fill="none" points="371,170 343,111" stroke="#000000" stroke-width="2"/>
+      <polyline fill="#bdbdbd" points="87,170 368,170 340,111 116,110" stroke="#000000" stroke-width="2"/>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="129" y="139">address</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="146" y="120">memAddress</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="247" y="120">memValue</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="291" y="119">mWrite</text>
-      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="323" y="118">mRead</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="8" text-anchor="middle" x="322" y="119">mRead</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="230" y="160">miss</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="285" y="149">tagR</text>
       <text dominant-baseline="central" font-family="SansSerif" font-size="10" text-anchor="middle" x="270" y="160">0</text>
@@ -3672,6 +3669,16 @@ ff 14 ff ff ff e0 5*ff d0
       <visible-register height="10" path="/Register(400,370)" stroke-width="0" width="6" x="198" y="128"/>
       <visible-register height="10" path="/Register(710,170)" stroke-width="0" width="6" x="233" y="128"/>
       <visible-register height="10" path="/Register(1050,430)" stroke-width="0" width="6" x="285" y="128"/>
+      <polyline fill="none" points="140,112 140,116" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="100,140 110,140" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="200,110 200,118" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="250,110 250,118" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="300,110 300,116" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="320,110 320,116" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="140,169 140,164" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="340,169 340,162" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="230,170 230,165" stroke="#000000" stroke-width="2"/>
+      <polyline fill="none" points="116,110 87,170" stroke="#000000" stroke-width="2"/>
       <circ-anchor facing="east" x="340" y="120"/>
       <circ-port dir="in" pin="150,350" x="100" y="140"/>
       <circ-port dir="in" pin="360,420" x="230" y="170"/>
