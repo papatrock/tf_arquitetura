@@ -2123,9 +2123,6 @@
     <comp lib="0" loc="(2840,640)" name="Clock">
       <a name="facing" val="north"/>
     </comp>
-    <comp lib="0" loc="(2860,280)" name="Clock">
-      <a name="facing" val="north"/>
-    </comp>
     <comp lib="0" loc="(2870,640)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="clkDiv2"/>
@@ -2559,6 +2556,7 @@
     <wire from="(2800,840)" to="(2800,910)"/>
     <wire from="(2800,840)" to="(2820,840)"/>
     <wire from="(2800,910)" to="(2820,910)"/>
+    <wire from="(2810,240)" to="(2950,240)"/>
     <wire from="(2820,820)" to="(2820,840)"/>
     <wire from="(2820,910)" to="(2820,960)"/>
     <wire from="(2820,910)" to="(2830,910)"/>
@@ -2571,11 +2569,7 @@
     <wire from="(2840,620)" to="(2860,620)"/>
     <wire from="(2850,920)" to="(2850,930)"/>
     <wire from="(2850,930)" to="(2860,930)"/>
-    <wire from="(2860,240)" to="(2860,280)"/>
-    <wire from="(2860,240)" to="(2950,240)"/>
-    <wire from="(2860,600)" to="(2860,610)"/>
-    <wire from="(2860,610)" to="(2860,620)"/>
-    <wire from="(2860,610)" to="(2880,610)"/>
+    <wire from="(2860,600)" to="(2860,620)"/>
     <wire from="(2860,890)" to="(2860,900)"/>
     <wire from="(2860,890)" to="(2870,890)"/>
     <wire from="(2860,930)" to="(2860,1090)"/>
@@ -2583,7 +2577,7 @@
     <wire from="(2870,620)" to="(2880,620)"/>
     <wire from="(2870,920)" to="(2870,950)"/>
     <wire from="(2870,950)" to="(2920,950)"/>
-    <wire from="(2880,600)" to="(2880,610)"/>
+    <wire from="(2880,600)" to="(2880,620)"/>
     <wire from="(2890,260)" to="(2890,450)"/>
     <wire from="(2890,260)" to="(2950,260)"/>
     <wire from="(2890,450)" to="(3010,450)"/>
@@ -4043,7 +4037,7 @@
     <comp lib="8" loc="(240,360)" name="Text">
       <a name="text" val="tag-nova"/>
     </comp>
-    <comp lib="8" loc="(377,149)" name="Text">
+    <comp lib="8" loc="(375,145)" name="Text">
       <a name="text" val="index"/>
     </comp>
     <comp lib="8" loc="(560,85)" name="Text">
@@ -4052,10 +4046,10 @@
     <comp lib="8" loc="(715,70)" name="Text">
       <a name="text" val="começa em tag 00 até tag 11"/>
     </comp>
-    <comp lib="8" loc="(759,293)" name="Text">
+    <comp lib="8" loc="(755,290)" name="Text">
       <a name="text" val="tag"/>
     </comp>
-    <comp lib="8" loc="(913,276)" name="Text">
+    <comp lib="8" loc="(910,275)" name="Text">
       <a name="text" val="offset"/>
     </comp>
     <comp lib="8" loc="(930,600)" name="Text">
