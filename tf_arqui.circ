@@ -2309,11 +2309,10 @@
     <comp lib="4" loc="(590,670)" name="ROM">
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 8 8
-1e 1e 6*8 b b b 7*f0 a1
-e5 9 5*f0 bc 9*f0 2f f0 f0
-f0 ed 19 19 f0 f0 f0 ed
-19 19 f0 f0 f0 ed 19 19
-f0 f0 f0 ed 41*ff d0 7*ff
+1c 1c ff 1e 3 3 ad e5
+15 ff ff ff b8 11*ff 0 1c
+14 5*ff d1 5*ff 18 18 5*ff d1
+20*ff
 </a>
       <a name="labelvisible" val="true"/>
     </comp>
@@ -2448,6 +2447,7 @@ f0 f0 f0 ed 41*ff d0 7*ff
     <wire from="(1820,850)" to="(1830,850)"/>
     <wire from="(1830,770)" to="(1830,850)"/>
     <wire from="(1830,770)" to="(1850,770)"/>
+    <wire from="(1830,850)" to="(2150,850)"/>
     <wire from="(1860,800)" to="(1860,1070)"/>
     <wire from="(1880,1630)" to="(1880,1640)"/>
     <wire from="(1880,780)" to="(1930,780)"/>
@@ -2467,7 +2467,7 @@ f0 f0 f0 ed 41*ff d0 7*ff
     <wire from="(1970,730)" to="(1970,880)"/>
     <wire from="(1970,730)" to="(1990,730)"/>
     <wire from="(1990,780)" to="(1990,790)"/>
-    <wire from="(1990,780)" to="(2080,780)"/>
+    <wire from="(1990,780)" to="(2090,780)"/>
     <wire from="(2000,740)" to="(2000,760)"/>
     <wire from="(2000,790)" to="(2000,1030)"/>
     <wire from="(2000,790)" to="(2090,790)"/>
@@ -2479,9 +2479,6 @@ f0 f0 f0 ed 41*ff d0 7*ff
     <wire from="(2030,740)" to="(2030,750)"/>
     <wire from="(2030,750)" to="(2090,750)"/>
     <wire from="(2060,1620)" to="(2060,1640)"/>
-    <wire from="(2080,780)" to="(2080,880)"/>
-    <wire from="(2080,780)" to="(2090,780)"/>
-    <wire from="(2080,880)" to="(2340,880)"/>
     <wire from="(2090,750)" to="(2100,750)"/>
     <wire from="(2090,770)" to="(2090,780)"/>
     <wire from="(2120,1460)" to="(2120,1480)"/>
@@ -2490,6 +2487,8 @@ f0 f0 f0 ed 41*ff d0 7*ff
     <wire from="(2140,1430)" to="(3520,1430)"/>
     <wire from="(2140,1440)" to="(3540,1440)"/>
     <wire from="(2150,1620)" to="(2150,1640)"/>
+    <wire from="(2150,850)" to="(2150,880)"/>
+    <wire from="(2150,880)" to="(2340,880)"/>
     <wire from="(2220,1620)" to="(2220,1640)"/>
     <wire from="(2280,860)" to="(2280,1050)"/>
     <wire from="(2280,860)" to="(2360,860)"/>
